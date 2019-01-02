@@ -26,7 +26,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'meow'
 
 
-@app.route('/login')
+@app.route('/login') 
 def get_token():
     expiration_date = (datetime.datetime.utcnow() +
                        datetime.timedelta(seconds=100))
